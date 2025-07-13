@@ -1,0 +1,32 @@
+@use 'root';
+
+@use 'mixins';
+
+/* Plugins */
+@use 'plugins/jquery.fancybox_fix';
+
+@use 'plugins/plugins-rewrite';
+
+/* Global styles */
+@use 'global/global-fonts';
+
+@use 'global/global-typo';
+
+@use 'global/global-scaffolding';
+
+/* Blocks */
+@use '../blocks/main/main';
+
+@use '../blocks/section/section';
+
+@use '../blocks/hero/hero';
+
+@use '../blocks/header/header';
+
+@use '../blocks/footer/footer';
+
+@use '../blocks/support/support';
+
+@use '../blocks/chat/chat';
+
+@use '../blocks/chat-input/chat-input';

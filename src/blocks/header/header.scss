@@ -1,0 +1,44 @@
+.header {
+  padding: 24px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+
+    img {
+      display: block;
+
+      @media only screen and (max-width: theme('screens.mdMax.max')) {
+      }
+    }
+  }
+
+  &__contact-btn {
+    overflow: hidden;
+
+    &:before {
+      display: none;
+      width: 12px;
+      min-width: 12px;
+      height: 12px;
+      content: '';
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.9989 1.00001L1.0001 11M1.00116 1L11 11' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    }
+
+    &.is-open {
+      padding-right: 34px;
+      padding-left: 34px;
+      text-indent: -9999px;
+      gap: 0;
+
+      &:before {
+        display: block;
+      }
+    }
+  }
+}

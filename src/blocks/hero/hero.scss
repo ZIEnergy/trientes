@@ -1,0 +1,28 @@
+.hero {
+
+  &__wrapper {
+    padding: 24px 24px 97px;
+    background: theme('colors.secondary') url(../img/hero-bg-mob@2x.png) bottom center no-repeat;
+    background-size: 100% auto;
+    border-radius: 24px;
+
+    @media only screen and (min-width: theme('screens.md')) {
+      padding: 55px 24px 188px;
+      background: theme('colors.secondary') url(../img/hero-bg@2x.png) bottom center no-repeat;
+      background-size: 100% auto;
+    }
+
+    @media only screen and (max-width: theme('screens.mdMax.max')) {
+    }
+  }
+
+  &__bull-logo {
+    padding: 0 0 105px;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: theme('screens.mdMax.max')) {
+      padding-bottom: 90px;
+    }
+  }
+}

@@ -1,0 +1,186 @@
+h1,
+.h1 {
+  font-size: 28px;
+  line-height: 135%;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+
+  @media only screen and (min-width: theme('screens.md')) {
+    font-size: 60px;
+    line-height: 80px;
+  }
+}
+
+h2,
+.h2 {
+
+  @media only screen and (min-width: theme('screens.md')) {
+  }
+}
+
+h3,
+.h3 {
+
+  @media only screen and (min-width: theme('screens.md')) {
+  }
+}
+
+h4,
+.h4 {
+
+  @media only screen and (min-width: theme('screens.md')) {
+  }
+}
+
+h5,
+.h5 {
+
+  @media only screen and (min-width: theme('screens.md')) {
+  }
+}
+
+p,
+.p {
+  font-size: 13px;
+  line-height: 150%;
+  font-weight: 275;
+  letter-spacing: 0;
+
+  @apply font-prompt;
+
+  @media only screen and (min-width: theme('screens.md')) {
+    font-size: 17px;
+  }
+
+  &.p-lg {
+
+    @media only screen and (min-width: theme('screens.md')) {
+    }
+  }
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+a {
+  font-size: 13px;
+  line-height: 150%;
+  font-weight: 275;
+  text-decoration: underline;
+  letter-spacing: 0;
+
+  @apply font-prompt;
+
+  @media only screen and (min-width: theme('screens.md')) {
+    font-size: 17px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+hr {
+}
+
+ul {
+  margin: 0 0 0 26px;
+  list-style-type: disc;
+
+  li {
+    font-size: 13px;
+    line-height: 150%;
+    font-weight: 275;
+    letter-spacing: 0;
+
+    @apply font-prompt;
+
+    @media only screen and (min-width: theme('screens.md')) {
+      font-size: 17px;
+    }
+  }
+}
+
+ol {
+  margin: 0 0 0 26px;
+  list-style: decimal;
+
+  li {
+    font-size: 13px;
+    line-height: 150%;
+    font-weight: 275;
+    letter-spacing: 0;
+
+    @apply font-prompt;
+
+    @media only screen and (min-width: theme('screens.md')) {
+      font-size: 17px;
+    }
+  }
+}
+
+table {
+  width: 100%;
+
+  th {
+  }
+
+  td {
+  }
+}
+
+tr {
+}
+
+th {
+}
+
+td {
+}
+
+input {
+
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+
+  &:focus {
+    outline: none;
+  }
+}
+
+select {
+}
+
+button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type='submit'] {
+  border: 0;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+div,
+a,
+a:active,
+a:focus {
+  outline: none;
+}

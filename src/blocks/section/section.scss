@@ -1,0 +1,69 @@
+.section {
+  position: relative;
+
+  @media only screen and (min-width: theme('screens.md')) {
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &--glow1 {
+
+    .section__bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1440px;
+      min-width: 1440px;
+      height: auto;
+      //width: 948px;
+      //min-width: 948px;
+      //height: 582px;
+      //filter: blur(350px);
+      //background: conic-gradient(from 180deg at 50% 50%, rgb(51, 196, 115), rgb(17, 129, 129));
+      //opacity: 0.3;
+      transform: translate(-50%, -50%);
+
+      &--mobile-video {
+
+        @media only screen and (max-width: theme('screens.mdMax.max')) {
+          top: -24%;
+          left: 0;
+          width: 100%;
+          min-width: 100%;
+          transform: translate(0, 0);
+        }
+      }
+
+      &--desktop-app {
+
+        @media only screen and (max-width: theme('screens.mdMax.max')) {
+          top: 8%;
+          left: 0;
+          width: 100%;
+          min-width: 100%;
+          transform: translate(0, 0);
+        }
+      }
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &--glow2 {
+
+    .section__bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @media only screen and (max-width: theme('screens.mdMax.max')) {
+        display: none;
+      }
+    }
+  }
+}

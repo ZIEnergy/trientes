@@ -1,0 +1,11 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+  --transition-base: .3s cubic-bezier(.25, .1, .25, 1);
+  --transition-long: .5s cubic-bezier(.25, .1, .25, 1);
+  --primary-gradient: linear-gradient(90deg, rgb(51, 196, 115), rgb(76, 137, 250));
+}
