@@ -23,11 +23,11 @@ jQuery(function ($) {
     e.preventDefault();
     if ( $(this).hasClass('is-open') ) {
       $(this).removeClass('is-open');
-      $('html, body').css('overflow', '');
+      $('body').removeClass('is-chat-open');
       $('.support').fadeOut(300);
     } else {
       $(this).addClass('is-open');
-      $('html, body').css('overflow', 'hidden');
+      $('body').addClass('is-chat-open');
       $('.support').fadeIn(300);
     }
   });

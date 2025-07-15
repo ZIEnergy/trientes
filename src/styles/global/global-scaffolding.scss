@@ -23,3 +23,7 @@ body {
   &::-webkit-scrollbar {
   }
 }
+
+.is-chat-open {
+  overflow: hidden;
+}
