@@ -17,6 +17,7 @@ const tailwindcss = require('tailwindcss');
 const cleanCSS = require('gulp-clean-css');
 const fs = require('fs');
 const path = require('path');
+const replace = require('gulp-replace');
 
 const imageDirs = [
   path.join(__dirname, 'public/videos/video1'),
@@ -98,6 +99,12 @@ gulp.task('html', function () {
     .pipe(browserSync.reload({
       stream: true
     }));
+});
+
+gulp.task('html:build', function () {
+  return gulp.src(paths.html.src)
+    .pipe(replace('./public/', './'))
+    .pipe(gulp.dest(paths.dirs.build));
 });
 
 gulp.task('styles', function () {
@@ -241,6 +248,7 @@ gulp.task('dev', gulp.series(
 
 gulp.task('build', gulp.series(
   'clean',
+  'html:build',
   'styles',
   'scriptsVendor',
   'scripts',
@@ -250,3 +258,5 @@ gulp.task('build', gulp.series(
   'images-webp',
   // 'generateConfig',
 ));
+
+gulp.task('default', gulp.parallel('dev'));
